@@ -1,16 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeneticAlgorithm.MainApp
+﻿namespace GeneticAlgorithm.MainApp
 {
     internal class Creature
     {
-        public int fitness()
+        private const int chromosomeLength = 5;
+
+        private static Random random = new Random();
+        private string chromosone = "";
+
+        public Creature()
+        {
+            chromosone = GenerateChromosome();
+        }
+
+        public int CalculateFitness()
         {
             return 0;
+        }
+
+        // Generate a random chromosome
+        private static string GenerateChromosome()
+        {
+            string chromosome = "";
+            for (int i = 0; i < chromosomeLength; i++)
+            {
+                chromosome += (char)random.Next(65, 91); // add a random capital letter to the chromosome
+            }
+            return chromosome;
         }
     }
 }
