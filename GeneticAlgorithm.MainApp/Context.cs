@@ -27,7 +27,7 @@
                 population.Add(new Creature());
             }
 
-            // 3) Evaulate fitness of each successors in the population
+            // 3) Evaluate fitness of each successors in the population
             // 4) Select parents for reproduction based on the fitness (higher fitness successors are likely more chosen)
             // 5) Apply crossover/mutation to selected parents to create successors (offspring)
             // 6) Evaulate fitness of each successors in the population

@@ -5,7 +5,7 @@
         private const int chromosomeLength = 5;
 
         private static Random random = new Random();
-        private string chromosone = "";
+        private string chromosone;
 
         public Creature()
         {
