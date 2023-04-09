@@ -17,7 +17,7 @@ internal class Program
 
         Console.Write("> Mutation Rate = ");
         inputText = Console.ReadLine();
-        int mutationRate = Convert.ToInt32(inputText);
+        double mutationRate = Convert.ToDouble(inputText);
 
         Context context = new Context(populationSize, numberOfGenerations, mutationRate);
         context.RunSimulation();
