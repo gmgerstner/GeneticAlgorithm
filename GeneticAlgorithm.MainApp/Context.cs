@@ -23,12 +23,12 @@
 
             // 2) Initialize population of successors randomly
             // 3) Evaulate fitness of each successors in the population
-            // 4) Select parents for reporduction based on the fitness (higher fitness successors are likely more chosen)
+            // 4) Select parents for reproduction based on the fitness (higher fitness successors are likely more chosen)
             // 5) Apply crossover/mutation to selected parents to create successors (offspring)
-            // 6) Same as step 3
+            // 6) Evaulate fitness of each successors in the population
             // 7) Select top N candidates w/ highest fitness
             // 8) Check if max # of generations reached, solution found, fitness threshold achieved
-            // 9) If criterion ws not met, reselect parents (step 4)
+            // 9) If criterion was not met, reselect parents (step 4)
         }
     }
 }
